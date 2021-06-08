@@ -1,0 +1,256 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Sans-Serif;
+}
+
+@keyframes blink{
+  5%{
+    background:rgba(179, 203, 211,0.7);
+  }  
+  10%{
+    background:rgba(255, 209, 255,0.7);
+  }  
+  15%{
+    background:rgba(255, 209, 192,0.7) ;
+  } 
+  20%{
+    background: rgba(253, 234, 255,0.7);
+  }  
+  25%{
+    background:rgba(253, 229, 224,0.7);
+  }  
+  30%{
+    background:rgba(253, 235, 211,0.7);
+  } 
+  35%{
+    background: rgba(222, 235, 211,0.7);
+  } 
+  40%{
+    background:pink;
+  } 
+  50%{
+    background: rgba(222, 203, 211,0.7);
+  } 
+  55%{
+    background: musterd;
+  } 
+  60%{
+    background: amber;
+  } 
+  70%{
+    background:grey ;
+  }
+}
+
+@-webkit-keyframes blink{
+ 5%{
+    background:rgba(0, 249, 0,0.7);
+  }  
+  10%{
+    background:purple ;
+  }  
+  15%{
+    background: blue;
+  } 
+  20%{
+    background: green;
+  }  
+  25%{
+    background: yellow;
+  }  
+  30%{
+    background:orange;
+  } 
+  35%{
+    background: red;
+  } 
+  40%{
+    background:pink;
+  } 
+  50%{
+    background:brown ;
+  } 
+  55%{
+    background: musterd;
+  } 
+  60%{
+    background: amber;
+  } 
+  70%{
+    background:grey ;
+  }
+}
+
+.menu-bar{
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+  
+}
+
+.home-icon{
+  width: 30px;
+  height: 30px;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li{
+  width: 100px;
+  margin: 5px;
+  padding: 5px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.menu-bar ul li:hover{
+  background: rgba(190, 185, 207, 0.5);
+  border-radius: 3px;
+}
+.sub-menu1{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu1{
+  display: block;
+  position: absolute;
+  background: rgba(190, 185, 175, 0.8);
+  margin-top: 15px;
+  margin-left: -50px;
+  
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+  width:150px;
+  padding: 15px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0px;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+  border-bottom: none;
+}
+.apple h1{
+  color: transparent;
+  background-image: url(bg.jpg);
+  background-size: 100% 100% ;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+}
+.menu-bar ul li:hover .sub-menu1 ul li:hover{
+  background: rgba(123, 141, 169, 0.7);
+  border-radius: 3px;
+}
+.about-heading{
+  background: white;
+  padding-left: 40px;
+}
+.about-history{
+  background: rgb(208, 195, 187);
+  width: 50%;
+  border-radius: 7px 7px 20px 7px;
+  padding: 2%;
+  text-align: justify;
+}
+.about-img-left{
+  max-width: 50%;
+  float: left;
+  border-radius: 30%;
+}
+.about-img-right{
+  max-width: 50%;
+  float: right;
+  border-radius: 30%;
+}
+.headquarter-heading{
+  padding-left: 20%;
+  color: white;
+  float: left;
+  width: 100%;
+  background: red;
+}
+.headquarters{
+  background:rgb(162, 195, 187);
+  padding: 2%;
+  border-radius: 7px 7px 20px 7px ;
+  width: 50%;
+}
+.concept-heading{
+  color: white;
+  background: green;
+  padding-left: 30%;
+}
+.vision {
+  background: rgb(235, 217, 239);
+  width: 46%;
+  float: left;
+  text-align: justify;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 5px 5px 20px 5px;
+}
+.vision-heading{
+  background: red;
+  border-radius: 9px;
+  padding-left: 30%;
+}
+.mission-heading{
+  background: red;
+  border-radius: 9px;
+  padding-left: 30%;
+}
+.mission{
+  background:rgb(235, 202, 176) ;
+  border-radius: 5px 5px 20px 5px;
+  float: right;
+  width: 46%;
+  text-align: justify;
+  padding: 2%;
+  margin: 2% ;
+}
+.values{
+  background: rgb(136, 159, 187);
+  width: 80%;
+  float: left;
+  border-radius: 7px 7px 30px 7px;
+  text-align: justify;
+  padding:2% ;
+  margin:2% 10% 2% 10% ;
+}
+.values-heading{
+  background: red;
+  border-radius: 7px;
+  padding-left: 30%;
+}
+.objective{
+  background:rgb(129, 131, 149) ;
+  width: 100%;
+  float: left;
+  color: black;
+  text-align: justify;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 5px;
+}
+.objective-heading{
+  background: red;
+  padding-left: 25%;
+  border-radius: 7px;
+}
